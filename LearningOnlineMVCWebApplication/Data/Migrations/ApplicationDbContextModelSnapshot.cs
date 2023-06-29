@@ -141,6 +141,9 @@ namespace LearningOnlineMVCWebApplication.Data.Migrations
                     b.Property<DateTime>("DateTimeItemReleased")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("MediaTypeId")
                         .HasColumnType("int");
 

@@ -6,7 +6,7 @@
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:c4321372-315f-442a-aa46-9983a1051b14:dbContext" value="LearningOnlineMVCWebApplication.Data.ApplicationDbContext" />
         <entry key="Common:noBuild" value="false" />
-        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:outputFolder" value="Data\Migrations" />
         <entry key="Common:useDefaultConnection" value="true" />
       </map>
     </option>
