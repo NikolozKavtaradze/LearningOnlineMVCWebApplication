@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LearningOnlineMVCWebApplication.Migrations
+namespace LearningOnlineMVCWebApplication.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230628213113_ModifyLengthAspNetUsersCustomFields")]
