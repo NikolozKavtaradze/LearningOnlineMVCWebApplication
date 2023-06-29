@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace LearningOnlineMVCWebApplication.Migrations
+namespace LearningOnlineMVCWebApplication.Data.Migrations
 {
     public partial class ModifyLengthAspNetUsersCustomFields : Migration
     {
