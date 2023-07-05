@@ -465,3 +465,8 @@ C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWe
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Details.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Create.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Delete.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Details.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Edit.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Index.cshtml.g.cs
