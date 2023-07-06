@@ -24,7 +24,22 @@ namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
         // GET: Admin/CategoryItem
         public async Task<IActionResult> Index(int categoryId)
         {
-            List<CategoryItem> list = await _context.CategoryItem.Where(c => c.CategoryId == categoryId).ToListAsync();
+            List<CategoryItem> list = await (from catItem in _context.CategoryItem
+                                            join contentItem in _context.Content
+                                            on catItem.Id equals contentItem.CategoryItem.Id
+                                            into gj
+                                            from subContent in gj.DefaultIfEmpty()
+                                            where catItem.CategoryId == categoryId
+                                            select new CategoryItem
+                                            {
+                                                Id = catItem.Id,
+                                                Title = catItem.Title,
+                                                Description = catItem.Description,
+                                                DateTimeItemReleased = catItem.DateTimeItemReleased,
+                                                MediaTypeId = catItem.MediaTypeId,
+                                                CategoryId = catItem.CategoryId,
+                                                ContentId = (subContent != null) ? subContent.Id : 0
+                                            }).ToListAsync();
 
             ViewBag.CategoryId = categoryId;
             return View(list);
@@ -85,11 +100,14 @@ namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
                 return NotFound();
             }
 
+            List<MediaType> mediaTypes = await _context.MediaType.ToListAsync();
             var categoryItem = await _context.CategoryItem.FindAsync(id);
             if (categoryItem == null)
             {
                 return NotFound();
             }
+
+            categoryItem.MediaTypes = mediaTypes.ConvertToSelectList(0);
             return View(categoryItem);
         }
 
@@ -123,7 +141,7 @@ namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new {categoryId = categoryItem.CategoryId});
             }
             return View(categoryItem);
         }
@@ -154,7 +172,7 @@ namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
             var categoryItem = await _context.CategoryItem.FindAsync(id);
             _context.CategoryItem.Remove(categoryItem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index),new {categoryId = categoryItem.CategoryId});
         }
 
         private bool CategoryItemExists(int id)

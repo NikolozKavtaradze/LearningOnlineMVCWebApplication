@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Policy;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LearningOnlineMVCWebApplication.Entities
@@ -25,5 +26,8 @@ namespace LearningOnlineMVCWebApplication.Entities
         public virtual ICollection<SelectListItem> MediaTypes { get; set; }
         
         public DateTime DateTimeItemReleased { get; set; }
+        
+        [NotMapped]
+        public int ContentId { get; set; }
     }
 }
