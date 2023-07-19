@@ -472,3 +472,8 @@ C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWe
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Index.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Content\Create.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Content\Edit.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Create.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Delete.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Details.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Edit.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Index.cshtml.g.cs
