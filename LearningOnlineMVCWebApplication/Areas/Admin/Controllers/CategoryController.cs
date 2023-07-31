@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LearningOnlineMVCWebApplication.Data;
 using LearningOnlineMVCWebApplication.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext _context;

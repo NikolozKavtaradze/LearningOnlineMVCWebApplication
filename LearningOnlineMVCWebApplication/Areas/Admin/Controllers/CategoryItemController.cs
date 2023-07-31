@@ -8,10 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using LearningOnlineMVCWebApplication.Data;
 using LearningOnlineMVCWebApplication.Entities;
 using LearningOnlineMVCWebApplication.Extensions;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class CategoryItemController : Controller
     {
         private readonly ApplicationDbContext _context;

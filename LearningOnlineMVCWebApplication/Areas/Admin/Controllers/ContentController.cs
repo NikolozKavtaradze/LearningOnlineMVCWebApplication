@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LearningOnlineMVCWebApplication.Data;
 using LearningOnlineMVCWebApplication.Entities;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace LearningOnlineMVCWebApplication.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ContentController : Controller
     {
         private readonly ApplicationDbContext _context;
