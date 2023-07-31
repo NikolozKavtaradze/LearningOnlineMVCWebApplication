@@ -11,8 +11,10 @@ namespace LearningOnlineMVCWebApplication.Entities
         [StringLength(200,MinimumLength = 2)]
         public string Title { get; set; }
 
+        [Display(Name = "HTML Content")]
         public string HTMLContent { get; set; }
 
+        [Display(Name = "Video Link")]
         public string VideoLink { get; set; }
 
         public CategoryItem CategoryItem { get; set; }

@@ -15,6 +15,7 @@ namespace LearningOnlineMVCWebApplication.Entities
         public string Title { get; set; }
 
         [Required] 
+        [Display(Name = "Thumbnail Image Path")]
         public string ThumbnailImagePath { get; set; }
         
         [ForeignKey("MediaTypeId")]
