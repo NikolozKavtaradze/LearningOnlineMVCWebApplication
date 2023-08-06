@@ -478,3 +478,8 @@ C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWe
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\LearningOnlineMVCWebApplication.pdb
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\LearningOnlineMVCWebApplication.genruntimeconfig.cache
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\ref\LearningOnlineMVCWebApplication.dll
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserLoginPartial.cshtml.g.cs
