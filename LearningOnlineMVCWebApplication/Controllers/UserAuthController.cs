@@ -3,6 +3,7 @@ using LearningOnlineMVCWebApplication.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace LearningOnlineMVCWebApplication.Controllers
@@ -67,6 +68,47 @@ namespace LearningOnlineMVCWebApplication.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }   
+        }
+
+        [AllowAnonymous ]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RegisterUser(RegistrationModel registrationModel)
+        {
+            registrationModel.RegistrationInValid = "true";
+
+            if (ModelState.IsValid)
+            {
+                ApplicationUser user = new ApplicationUser
+                {
+                    UserName = registrationModel.Email,
+                    Email = registrationModel.Email,
+                    PhoneNumber = registrationModel.PhoneNumber,
+                    FirstName = registrationModel.FirstName,
+                    LastName = registrationModel.LastName,
+                    Address1 = registrationModel.Address1,
+                    Address2 = registrationModel.Address2,
+                    PostCode = registrationModel.PostCode
+                };
+
+                var result = await _userManager.CreateAsync(user,registrationModel.Password);
+
+                if (result.Succeeded)
+                {
+                    registrationModel.RegistrationInValid = "";
+
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+
+                    return PartialView("_UserRegistrationPartial", registrationModel);
+
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid Registration Attempt!");
+                }
+            }
+
+            return PartialView("_UserRegistrationPartial", registrationModel); 
         }
     }
 }
