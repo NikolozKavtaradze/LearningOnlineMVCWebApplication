@@ -1,4 +1,48 @@
 ﻿$(function () {
+
+    $("#UserRegistrationModal input[name = 'AcceptUserAgreement']").click(onAcceptUserAgreementClick);
+
+    $("#UserRegistrationModal button[name = 'register']").prop("disabled", true);
+
+    function onAcceptUserAgreementClick () {
+        if ($(this).is(":checked")) {
+            $("#UserRegistrationModal button[name = 'register']").prop("disabled", false);
+        }
+        else {
+            $("#UserRegistrationModal button[name = 'register']").prop("disabled", true);
+        }
+    }
+
+    $("#UserRegistrationModal input[name = 'Email']").blur(function () {
+        var email = $("#UserRegistrationModal input[name = 'Email']").val();
+
+        var url = "UserAuth/UserNameExists?userName=" + email;
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function(data) {
+                if (data == true) {
+                    let alertHtml = '<div class="alert alert-warning alert-dismissible fade show" role="alert">' +
+                        '<strong>Invalid Email!</strong> This email address has already been used.' +
+                        '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+                        '<span aria-hidden="true">&times;</span>' +
+                        '</button>' +
+                        '</div>';
+
+
+                    $("#alert_placeholder_register").html(alertHtml);
+                }
+                else {
+                    $("#alert_placeholder_register").html("");
+                }
+            },
+            error: function (xhr,ajaxOptions,thrownError) {
+                console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            }
+        });
+    });
+
     let registerUserButton = $("#UserRegistrationModal button[name = 'register']").click(onUserRegisterClick); 
 
     function onUserRegisterClick()
