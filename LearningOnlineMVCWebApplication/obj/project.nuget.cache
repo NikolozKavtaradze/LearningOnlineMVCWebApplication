@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cYbomqa3ZuS4QQa24mPdPPxdNIrda9jOzvgvAVw0PkWAV7GtkU+FSQUk+RI96+iTZRd+vd5fqORZtxJ0XZFSpA==",
+  "dgSpecHash": "jNGZvrnDSfDYiLNPYPcJWIddEAVAyLf0JXaap/k51lQjfdSfrJoOO8sCTBELYW1ZCHr1dzEZ2SZvop1qJ9V5kQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kavto\\RiderProjects\\LearningOnlineMVCWebApplication\\LearningOnlineMVCWebApplication\\LearningOnlineMVCWebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kavto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Kavto\\.nuget\\packages\\jquery\\2.1.0\\jquery.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kavto\\.nuget\\packages\\jquery-vsdoc\\2.1.0\\jquery-vsdoc.2.1.0.nupkg.sha512",
     "C:\\Users\\Kavto\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
     "C:\\Users\\Kavto\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.17\\microsoft.aspnetcore.cryptography.keyderivation.5.0.17.nupkg.sha512",
     "C:\\Users\\Kavto\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.17\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.17.nupkg.sha512",

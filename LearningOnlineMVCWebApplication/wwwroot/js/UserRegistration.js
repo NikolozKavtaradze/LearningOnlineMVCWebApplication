@@ -13,31 +13,29 @@
         }
     }
 
-    $("#UserRegistrationModal input[name = 'Email']").blur(function () {
-        var email = $("#UserRegistrationModal input[name = 'Email']").val();
 
-        var url = "UserAuth/UserNameExists?userName=" + email;
+    $("#UserRegistrationModal input[name = 'Email']").blur(function () {
+        let email = $("#UserRegistrationModal input[name = 'Email']").val();
+
+        let url = "UserAuth/UserNameExists?userName=" + email;
 
         $.ajax({
             type: "GET",
             url: url,
             success: function(data) {
                 if (data == true) {
-                    let alertHtml = '<div class="alert alert-warning alert-dismissible fade show" role="alert">' +
-                        '<strong>Invalid Email!</strong> This email address has already been used.' +
-                        '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-                        '<span aria-hidden="true">&times;</span>' +
-                        '</button>' +
-                        '</div>';
-
-
-                    $("#alert_placeholder_register").html(alertHtml);
+                    PresentClosableBootstrapAlert("#alert_placeholder_register", "warning", "Invalid Email!", "This email address has already been registered");
                 }
                 else {
-                    $("#alert_placeholder_register").html("");
+                    CloseAlert("#alert_placeholder_register");
                 }
             },
-            error: function (xhr,ajaxOptions,thrownError) {
+            error: function (xhr, ajaxOptions, thrownError) {
+
+                let errorText = "Status: " + xhr.status + " - " + xhr.statusText;
+
+                PresentClosableBootstrapAlert("#alert_placeholder_register", "danger", "Error!", errorText);
+
                 console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
@@ -68,9 +66,6 @@
         let postCode = $("#UserRegistrationModal input[name = 'PostCode']").val();
 
         let phoneNumber = $("#UserRegistrationModal input[name = 'PhoneNumber']").val();
-
-        //let acceptUserAgreement = $("#UserRegistrationModal input[name = 'AcceptUserAgreement']").prop('checked');
-
 
         let userInput = {
             __RequestVerificationToken: antiForgeryToken,
@@ -113,6 +108,11 @@
                 }
             },
             error: function (xhr, ajaxOptions, thrownError) {
+
+                let errorText = "Status: " + xhr.status + " - " + xhr.statusText;
+
+                PresentClosableBootstrapAlert("#alert_placeholder_register", "danger", "Error!", errorText);
+
                 console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });

@@ -484,3 +484,4 @@ C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWe
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserLoginPartial.cshtml.g.cs
 C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserRegistrationPartial.cshtml.g.cs
+C:\Users\Kavto\RiderProjects\LearningOnlineMVCWebApplication\LearningOnlineMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_AuthScriptsPartial.cshtml.g.cs
